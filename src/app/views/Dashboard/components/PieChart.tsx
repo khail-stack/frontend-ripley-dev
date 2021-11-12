@@ -25,11 +25,10 @@ const PieChart: React.FC<Props> = ({data}) => {
             borderWidth: 1,
             },
         ],
-    }} options={{ title: { position: "top", display: true, text: "Gráfico de barras", fontStyle: "bold", fontSize: 20 }}} /> : null;
+    }} options={{ title: { position: "top", display: true, text: "Cantidad de clientes por género", fontStyle: "bold", fontSize: 12 }}} /> : null;
 
     return (
         <div className="chart_container">
-            <h5>Cantidad de clientes por género</h5>
             {pie}
         </div>
     )
